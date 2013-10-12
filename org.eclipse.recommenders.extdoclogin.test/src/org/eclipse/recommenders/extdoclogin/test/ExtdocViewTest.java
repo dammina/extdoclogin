@@ -4,20 +4,14 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
 
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.jface.viewers.IStructuredContentProvider;
 import org.eclipse.jface.viewers.ITableLabelProvider;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.quickaccess.ActionProvider;
-import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
 import org.eclipse.recommenders.extdoclogin.views.ExtdocView;
 /**
 * The class <code>FavoritesViewTest</code> contains tests
@@ -60,11 +54,14 @@ public class ExtdocViewTest {
 	*/
 	@Test
 	public void test() {
+		/**
+		 * UI testing part
+		 */
 		TableViewer viewer = testView.getExtdocViewer();
 		Object[] expectedContent =
-		new Object[] { "Create", "Edit", "Rate" };
+		new Object[] { "Create", "Edit" };
 		Object[] expectedLabels =
-		new String[] { "Create", "Edit", "Rate" };
+		new String[] { "Create", "Edit" };
 		Object expectedloginlabel=new String();//
 		Object expectedtooltiptext=new String();
 		expectedloginlabel="Login";//

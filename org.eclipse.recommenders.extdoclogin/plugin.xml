@@ -5,11 +5,11 @@
    <extension
          point="org.eclipse.ui.views">
       <category
-            name="Recommenders"
+            name="Recommenders Extdoc"
             id="org.eclipse.recommenders.extdoclogin">
       </category>
       <view
-            name="Social Extdoc"
+            name="Extdoc Edit"
             icon="icons/extdoc.png"
             category="org.eclipse.recommenders.extdoclogin"
             class="org.eclipse.recommenders.extdoclogin.views.ExtdocView"

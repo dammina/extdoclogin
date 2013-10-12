@@ -6,12 +6,13 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.eclipse.recommenders.extdoclogin.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- org.eclipse.mylyn.commons.repositories.core;bundle-version="1.2.0",
- org.eclipse.mylyn.gerrit.core;bundle-version="2.0.0",
- org.eclipse.mylyn.commons.net;bundle-version="3.10.0",
- org.eclipse.mylyn.commons.workbench;bundle-version="3.10.0",
- org.eclipse.mylyn.tasks.ui;bundle-version="3.9.0",
- org.eclipse.mylyn.gerrit.ui;bundle-version="2.0.1"
+ org.eclipse.core.resources;bundle-version="3.8.100",
+ org.eclipse.ui.ide;bundle-version="3.9.0",
+ org.eclipse.recommenders.extdoc;bundle-version="1.0.4",
+ org.eclipse.recommenders.extdoc.rcp;bundle-version="1.0.4",
+ org.eclipse.equinox.registry,
+ org.eclipse.ui.workbench,
+ org.eclipse.jdt.core;bundle-version="3.9.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: org.eclipse.recommenders.extdoclogin.views
