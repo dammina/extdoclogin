@@ -19,6 +19,7 @@ import org.eclipse.swt.widgets.*;
  *@author Dammina Sahabandu
  */
 
+
 public class DocEditor {
 	public static boolean methods=false;
 	public static boolean javadoc=false;
