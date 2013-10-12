@@ -33,9 +33,14 @@ import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.SWT;
 //import org.eclipse.mylyn.commons.repositories.core.auth.*;
 
+<<<<<<< HEAD
 
 /**
  * This class demonstrates how to plug-in a new
+=======
+/**
+ * This sample class demonstrates how to plug-in a new
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
  * workbench view. The view shows data obtained from the
  * model. The sample creates a dummy model on the fly,
  * but a real implementation would connect to the model
@@ -50,8 +55,11 @@ import org.eclipse.swt.SWT;
  * in order to ensure that objects of the same type are
  * presented in the same way everywhere.
  * <p>
+<<<<<<< HEAD
  * @author Dammina Sahabandu
  * <p>
+=======
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
  */
 
 public class ExtdocView extends ViewPart {
@@ -60,7 +68,11 @@ public class ExtdocView extends ViewPart {
 	 * The ID of the view as specified by the extension.
 	 */
 	public static final String ID = "org.eclipse.recommenders.extdoclogin.views.ExtdocView";
+<<<<<<< HEAD
 	public static DocEditor tui=new DocEditor();
+=======
+	public static testui tui=new testui();
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 	private TableViewer viewer;
 	public static String abspath;
 
@@ -107,7 +119,11 @@ public class ExtdocView extends ViewPart {
 		public void dispose() {
 		}
 		public Object[] getElements(Object parent) {
+<<<<<<< HEAD
 			return new String[] { "Create", "Edit" };
+=======
+			return new String[] { "Create", "Edit", "Rate" };
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 		}
 	}
 	class ViewLabelProvider extends LabelProvider implements ITableLabelProvider {
@@ -202,15 +218,25 @@ public class ExtdocView extends ViewPart {
 		try{
 			IFile file = (IFile) ((IStructuredSelection) structured).getFirstElement();
 			IPath path=file.getFullPath();
+<<<<<<< HEAD
 			//			System.out.println(path.toPortableString());
 			//			showMessage(path.toPortableString());
+=======
+//			System.out.println(path.toPortableString());
+//			showMessage(path.toPortableString());
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 			return path.toPortableString();
 		}catch(ClassCastException e){
 			try{
 				ICompilationUnit file=(ICompilationUnit)((IStructuredSelection)structured).getFirstElement();
 				IPath path=file.getPath();
+<<<<<<< HEAD
 				//				System.out.println(path.toPortableString());
 				//				showMessage(path.toPortableString());
+=======
+//				System.out.println(path.toPortableString());
+//				showMessage(path.toPortableString());
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 				return path.toPortableString();
 			}catch(ClassCastException ex){
 				System.out.println("folder selected");
@@ -222,7 +248,11 @@ public class ExtdocView extends ViewPart {
 	private void makeActions() {
 		login_button = new Action() {
 			public void run() {
+<<<<<<< HEAD
 
+=======
+				
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 				/*ISelectionService service = getSite().getWorkbenchWindow().getSelectionService();
 				IStructuredSelection structured = (IStructuredSelection) service.getSelection("org.eclipse.jdt.ui.PackageExplorer");
 				try{
@@ -253,8 +283,13 @@ public class ExtdocView extends ViewPart {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+<<<<<<< HEAD
 				//				showMessage("login button still get implemented!");
 
+=======
+//				showMessage("login button still get implemented!");
+				
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 
 			}
 		};
@@ -280,9 +315,13 @@ public class ExtdocView extends ViewPart {
 				Object obj = ((IStructuredSelection)selection).getFirstElement();
 				if(obj.toString().equals("Edit")){
 					//
+<<<<<<< HEAD
 					/**
 					 * This method finds the absolute path to the selected file in the package explorer.
 					 */
+=======
+					
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 					ISelectionService service = getSite().getWorkbenchWindow().getSelectionService();
 					IStructuredSelection structured = (IStructuredSelection) service.getSelection("org.eclipse.jdt.ui.PackageExplorer");
 					try{
@@ -304,9 +343,15 @@ public class ExtdocView extends ViewPart {
 							e1.printStackTrace();
 						}
 					}
+<<<<<<< HEAD
 
 					//
 					//					showMessage(abspath);
+=======
+					
+					//
+//					showMessage(abspath);
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 					try {
 						if(!tui.checkexistenceoffile()){
 							showMessage("There is no document for this file!");
@@ -314,7 +359,11 @@ public class ExtdocView extends ViewPart {
 						else{
 							tui.editfunc();
 						}
+<<<<<<< HEAD
 
+=======
+						
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -322,7 +371,11 @@ public class ExtdocView extends ViewPart {
 				}
 				else if(obj.toString().equals("Create")){
 					//
+<<<<<<< HEAD
 
+=======
+					
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 					ISelectionService service = getSite().getWorkbenchWindow().getSelectionService();
 					IStructuredSelection structured = (IStructuredSelection) service.getSelection("org.eclipse.jdt.ui.PackageExplorer");
 					try{
@@ -333,8 +386,13 @@ public class ExtdocView extends ViewPart {
 						try{
 							ICompilationUnit file=(ICompilationUnit)((IStructuredSelection)structured).getFirstElement();
 							IFile ifile = (IFile)file.getUnderlyingResource();
+<<<<<<< HEAD
 
 							//							System.out.println(file.getPackageDeclarations());
+=======
+							
+//							System.out.println(file.getPackageDeclarations());
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 							IPath path=ifile.getRawLocation();
 							abspath=path.toPortableString();
 						}catch(ClassCastException ex){
@@ -346,11 +404,19 @@ public class ExtdocView extends ViewPart {
 							e1.printStackTrace();
 						}
 					}
+<<<<<<< HEAD
 
 					//
 					//					abspath=getAbspath();
 					//					showMessage("Please log into the system before Creating the document");
 					//					showMessage(abspath);
+=======
+					
+					//
+//					abspath=getAbspath();
+					//					showMessage("Please log into the system before Creating the document");
+//					showMessage(abspath);
+>>>>>>> 0551bec1a5ec598c2b0cf9f0409ccc78686b8568
 					if(tui.checkexistenceoffile()){
 						showMessage("There already exists a document file for this project!");
 					}
