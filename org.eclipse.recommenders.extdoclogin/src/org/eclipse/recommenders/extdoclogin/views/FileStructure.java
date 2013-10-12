@@ -10,6 +10,7 @@ import java.io.IOException;
  * Contains some methods to list files and folders from a directory
  *
  * @author Dammina Sahabandu
+ * 
  */
 public class FileStructure {
 	public static String contentString="";
